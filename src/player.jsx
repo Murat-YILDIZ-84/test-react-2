@@ -1,19 +1,10 @@
-function bradmaxPlayerInit() {
-    //if(window.player){ window.bradmax.player.destroy(player); }
-    
-    var player = null;
-    var url = "https:\/\/livestream.ibb.gov.tr\/cam_turistik\/b_kapalicarsi.stream\/playlist.m3u8";
-    var bradmaxPlayerConfig = {
-      "showErrorDetails":false,
-      "contextMenuDisabled": true,
-      "dataProvider":{"source":[{"url":url}]},
-      "autoplay":true,
-      "mute":true
-    };
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
 
-    var element = document.getElementById("bradmaxPlayer");
-    player = window.bradmax.player.create(element, bradmaxPlayerConfig);
-    //player = window.bradmax.player.create(element, null);
-
-    //if(!window.player){ window.player = player; }
-}
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+      <App />
+    </StrictMode>
+  )
