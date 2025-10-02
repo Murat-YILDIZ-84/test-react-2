@@ -31,7 +31,7 @@ function Procedures(){
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
       <script type="text/javascript" src="/src/player.js"></script>
       <div id="bradmaxPlayer" class='playerArea'></div>
-      <button onClick={bradmaxPlayerInit()}>Test2</button>
+      <button onClick=bradmaxPlayerInit>Test2</button>
       
       
     </>
