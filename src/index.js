@@ -8,6 +8,7 @@ function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
   
   const [result, setResult] = useState(["Sunucu Bekleniyor..."]);
+  const [update, setUpdate] = useState([]);
 
   function Test(){
     setResult("Bekleyiniz...");
@@ -18,7 +19,9 @@ function Procedures(){
   }
 
   function Test2(){
-    return <p id="demo">Bu yazı deneme amaçlıdır</p>
+    setUpdate(<>
+      <p id="demo">Bu yazı deneme amaçlıdır</p>);
+    </>);
   }
 
   return (
@@ -32,6 +35,7 @@ function Procedures(){
       
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
       <div id="bradmaxPlayer" class='playerArea'></div>
+      {update}
       
       
     </>
