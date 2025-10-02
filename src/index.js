@@ -22,7 +22,7 @@ function Procedures(){
   function Test2(){
     setUpdate(<>
       <div id="bradmaxPlayer" class='playerArea'></div>
-      bradmaxPlayerInit()
+      {bradmaxPlayerInit()}
     </>);
   }
 
