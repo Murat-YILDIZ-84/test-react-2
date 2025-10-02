@@ -18,27 +18,6 @@ function Procedures(){
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
 
-
-function bradmaxPlayerInit() {
-    //if(window.player){ window.bradmax.player.destroy(player); }
-    
-    var player = null;
-    var url = "https:\/\/livestream.ibb.gov.tr\/cam_turistik\/b_kapalicarsi.stream\/playlist.m3u8";
-    var bradmaxPlayerConfig = {
-      "showErrorDetails":false,
-      "contextMenuDisabled": true,
-      "dataProvider":{"source":[{"url":url}]},
-      "autoplay":true,
-      "mute":true
-    };
-
-    var element = document.getElementById("bradmaxPlayer");
-    player = bradmax.player.create(element, bradmaxPlayerConfig);
-    //player = window.bradmax.player.create(element, null);
-
-    //if(!window.player){ window.player = player; }
-}
-
   function Test2(){
     setUpdate();
   }
@@ -50,6 +29,7 @@ function bradmaxPlayerInit() {
       {result}
 
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
+      <script type="text/javascript" src="/src/player.js"></script>
       <div id="bradmaxPlayer" class='playerArea'></div>
       <button onClick={bradmaxPlayerInit()}>Test2</button>
       
