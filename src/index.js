@@ -29,9 +29,9 @@ function Procedures(){
       {result}
 
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
-      <script type="text/javascript" src="/player.js"></script>
+      <script type="text/javascript" src="/player.jsx"></script>
       <div id="bradmaxPlayer" class='playerArea'></div>
-      <button onClick=bradmaxPlayerInit>Test2</button>
+      <button onClick={bradmaxPlayerInit()}>Test2</button>
       
       
     </>
