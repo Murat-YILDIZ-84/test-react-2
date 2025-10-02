@@ -18,9 +18,22 @@ function Procedures(){
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
 
+  const url = "https:\/\/livestream.ibb.gov.tr\/cam_turistik\/b_kapalicarsi.stream\/playlist.m3u8";
+  const bradmaxPlayerConfig = {
+    'showErrorDetails':false,
+    'contextMenuDisabled': true,
+    'dataProvider':{'source':[{'url':url}]},
+    'autoplay':true,
+    'mute':true
+  };
+
   function Test2(){
     setUpdate(<>
-      <p id="demo">Bu yazı deneme amaçlıdır</p>);
+      <script>
+        var player = null;
+        var element = document.getElementById("bradmaxPlayer");
+        player = window.bradmax.player.create(element, bradmaxPlayerConfig);
+      </script>
     </>);
   }
 
