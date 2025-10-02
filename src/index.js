@@ -17,13 +17,25 @@ function Procedures(){
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
 
+  function Test2(){
+    return (
+      <p id="demo">Bu yazı deneme amaçlıdır</p>
+    );
+  }
+
   return (
     <>
-      <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
       <button onClick={Test}>Test</button>
-      <div id="bradmaxPlayer" class='playerArea'></div>
       <br></br>
       {result}
+
+      <button onClick={Test2}>Test2</button>
+      
+      
+      <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
+      <div id="bradmaxPlayer" class='playerArea'></div>
+      
+      
     </>
   );
 }
