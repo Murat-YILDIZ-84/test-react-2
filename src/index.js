@@ -18,12 +18,12 @@ function Procedures(){
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
 
-var player = null;
-var url = "https:\/\/livestream.ibb.gov.tr\/cam_turistik\/b_kapalicarsi.stream\/playlist.m3u8";
 
 function bradmaxPlayerInit() {
-    if(window.player){ window.bradmax.player.destroy(player); }
+    //if(window.player){ window.bradmax.player.destroy(player); }
     
+    var player = null;
+    var url = "https:\/\/livestream.ibb.gov.tr\/cam_turistik\/b_kapalicarsi.stream\/playlist.m3u8";
     var bradmaxPlayerConfig = {
       "showErrorDetails":false,
       "contextMenuDisabled": true,
@@ -36,7 +36,7 @@ function bradmaxPlayerInit() {
     player = window.bradmax.player.create(element, bradmaxPlayerConfig);
     //player = window.bradmax.player.create(element, null);
 
-    if(!window.player){ window.player = player; }
+    //if(!window.player){ window.player = player; }
 }
 
   function Test2(){
