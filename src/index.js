@@ -18,9 +18,7 @@ function Procedures(){
   }
 
   function Test2(){
-    return (
-      <p id="demo">Bu yazı deneme amaçlıdır</p>
-    );
+    return <p id="demo">Bu yazı deneme amaçlıdır</p>
   }
 
   return (
