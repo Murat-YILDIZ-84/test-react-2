@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import axios from "axios";
 import './index.css';
+import './player.js';
 
 function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
@@ -34,7 +35,7 @@ function Procedures(){
       
       
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
-      
+
       {update}
       
       
