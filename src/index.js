@@ -33,7 +33,7 @@ function bradmaxPlayerInit() {
     };
 
     var element = document.getElementById("bradmaxPlayer");
-    player = window.bradmax.player.create(element, bradmaxPlayerConfig);
+    player = bradmax.player.create(element, bradmaxPlayerConfig);
     //player = window.bradmax.player.create(element, null);
 
     //if(!window.player){ window.player = player; }
