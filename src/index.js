@@ -32,7 +32,7 @@ function Procedures(){
       <div id="bradmaxPlayer" class='playerArea'></div>
       <button id="demo">Test-2</button>
       <script>
-        document.getElementById("demo").addEventListener("click", ()=>{document.getElementById("demo").innerHTML = "YOU CL!"});
+        document.getElementById("demo").addEventListener("click", (){document.getElementById("demo").innerHTML = "YOU CL!"});
       </script>
       
     </>
