@@ -20,7 +20,7 @@ function Procedures(){
       <button onClick={Test}>Test</button>
 
       <ReactPlayer
-        url={result}
+        src={result}
         config={{
           file: {
             attributes: {
