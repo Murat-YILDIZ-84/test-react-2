@@ -5,6 +5,8 @@ import axios from "axios";
 import ReactPlayer from "react-player";
 
 function Procedures(){
+  const adres = "https://test-1-k2ol.onrender.com";
+  
   const [result, setResult] = useState([""]);
 
   function Test(){
