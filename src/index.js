@@ -7,7 +7,7 @@ import './index.css';
 function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
   
-  //const [result, setResult] = useState(["Sunucu Bekleniyor..."]);
+  const [result, setResult] = useState(["Sunucu Bekleniyor..."]);
 
   function Test(){
     /*
