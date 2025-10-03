@@ -29,7 +29,7 @@ function Procedures(){
       {result}
 
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
-      <script type="module" src="/src/player.jsx"></script>
+      <script type="text/javascript" src="/src/player.js"></script>
       
       
     </>
