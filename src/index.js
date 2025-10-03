@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 
 function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
-  
+
   const [result, setResult] = useState([""]);
 
   function Test(){
@@ -19,7 +19,12 @@ function Procedures(){
     <>
       <button onClick={Test}>Test</button>
 
-      <ReactPlayer src={result} />
+      <ReactPlayer src={result}
+      config="{
+        method: 'GET',
+        mode: 'cors',
+        credentials: 'same-origin'
+      }"/>
     </>
   );
 }
