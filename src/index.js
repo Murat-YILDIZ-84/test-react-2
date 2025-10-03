@@ -20,6 +20,7 @@ function Procedures(){
       <button onClick={Test}>Test</button>
 
       <ReactPlayer
+        crossorigin
         src={result}
         config={{
           file: {
