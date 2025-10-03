@@ -3,9 +3,19 @@ import ReactDOM from 'react-dom/client';
 import ReactPlayer from "react-player";
 
 function Procedures(){
+  const [result, setResult] = useState([]);
+
+  function Test(){
+    axios(adres + "/sunucu")
+    .then((res)=> setResult(res.data))
+    .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
+  }
+
   return (
     <>
-      <ReactPlayer src='https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8' />
+      <button onClick={Test}>Test</button>
+
+      <ReactPlayer src={result} />
     </>
   );
 }
