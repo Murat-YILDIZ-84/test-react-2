@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import ReactPlayer from "react-player";
 
 function Procedures(){
-  const [result, setResult] = useState([]);
+  const [result, setResult] = useState([""]);
 
   function Test(){
     axios(adres + "/sunucu")
