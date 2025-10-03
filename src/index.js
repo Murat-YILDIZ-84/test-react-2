@@ -19,12 +19,16 @@ function Procedures(){
     <>
       <button onClick={Test}>Test</button>
 
-      <ReactPlayer src={result}
-      config="{
-        method: 'GET',
-        mode: 'cors',
-        credentials: 'same-origin'
-      }"/>
+      <ReactPlayer
+      url="https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8"
+      config={{
+        file: {
+          attributes: {
+            crossOrigin: "true",
+          }
+        }
+      }}
+      controls
     </>
   );
 }
