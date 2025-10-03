@@ -7,7 +7,7 @@ import ReactPlayer from "react-player";
 function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
 
-  const [result, setResult] = useState([""]);
+  const [result, setResult] = useState(["https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8"]);
 
   function Test(){
     axios(adres + "/sunucu")
@@ -17,11 +17,6 @@ function Procedures(){
 
   return (
     <>
-      <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet"></link>
-      <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
-      <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-
       <button onClick={Test}>Test</button>
 
       <ReactPlayer src={result}
