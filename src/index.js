@@ -10,14 +10,6 @@ function Procedures(){
   const [result, setResult] = useState(["Sunucu Bekleniyor..."]);
 
   function Test(){
-    /*
-    setResult("Bekleyiniz...");
-
-    axios(adres + "/test")
-    .then((res)=> setResult("Test : " + res.data))
-    .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
-    */
-
     axios(adres + "/sunucu")
     .then((res)=> setResult(res.data))
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
