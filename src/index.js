@@ -7,29 +7,29 @@ import './index.css';
 function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
   
-  const [result, setResult] = useState(["Sunucu Bekleniyor..."]);
-  const [update, setUpdate] = useState([]);
+  //const [result, setResult] = useState(["Sunucu Bekleniyor..."]);
 
   function Test(){
+    /*
     setResult("Bekleyiniz...");
 
     axios(adres + "/test")
     .then((res)=> setResult("Test : " + res.data))
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
-  }
+    */
 
-  function Test2(){
-    setUpdate();
+    axios(adres + "/sunucu")
+    .then((res)=> setResult(res.data))
+    .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
 
   return (
     <>
       <button onClick={Test}>Test</button>
-      <br></br>
-      {result}
 
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
       <div id="bradmaxPlayer" class='playerArea'></div>
+      <script>{result}</script>
       
     </>
   );
