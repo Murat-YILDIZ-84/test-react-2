@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 function Procedures(){
   return (
     <>
-      <ReactPlayer src='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+      <ReactPlayer src='https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8' />
     </>
   );
 }
