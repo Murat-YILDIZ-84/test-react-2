@@ -29,8 +29,11 @@ function Procedures(){
       {result}
 
       <script type="text/javascript" src="https://istanbuluseyret.ibb.gov.tr/wp-content/plugins/bradmax-player/assets/js/default_player.js" id="bradmax-player-js"></script>
-      <script type="text/javascript" src="/src/player.js"></script>
-      
+      <div id="bradmaxPlayer" class='playerArea'></div>
+      <button id="demo">Test-2</button>
+      <script>
+        document.getElementById("demo").addEventListener("click", ()=>{document.getElementById("demo").innerHTML = "YOU CL!"});
+      </script>
       
     </>
   );
