@@ -7,13 +7,17 @@ import ReactPlayer from "react-player";
 function Procedures(){
   const adres = "https://test-1-k2ol.onrender.com";
 
-  const [result, setResult] = useState(["https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8"]);
+  const [result, setResult] = useState([]);
 
   function Test(){
     axios(adres + "/sunucu")
     .then((res)=> setResult(res.data))
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
+
+  useEffect(
+    setResult("resultTableCopy")
+  );
 
   return (
     <>
