@@ -9,6 +9,13 @@ function Procedures(){
 
   const [result, setResult] = useState([]);
 
+  
+  function Test1(){
+    axios(adres + "/test")
+    .then((res)=> setResult(res.data))
+    .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
+  }
+
   function Test(){
     axios(adres + "/sunucu")
     .then((res)=> setResult(res.data))
@@ -30,6 +37,7 @@ function Procedures(){
 
   return (
     <>
+      <button onClick={Test1}>Test1</button>
       <button onClick={Test}>Test</button>
 
       {result}
