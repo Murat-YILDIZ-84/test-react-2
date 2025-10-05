@@ -17,13 +17,14 @@ function Procedures(){
 
   useEffect(() => {
     fetch('https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8', {
-        method: 'POST',
+        method: 'GET',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/vnd.apple.mpegurl',
+            'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Allow-Origin': '*'
         },
     })
-    .then(data => setResult(data.json()))
+    .then(data => setResult(data))
   }, []);
 
   return (
