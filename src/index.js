@@ -18,6 +18,7 @@ function Procedures(){
   useEffect(() => {
     fetch('https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8', {
         method: 'GET',
+        mode: 'cors',
         headers: {
             'Content-Type': 'application/vnd.apple.mpegurl',
             'Access-Control-Allow-Credentials': 'true',
