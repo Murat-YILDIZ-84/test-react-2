@@ -16,7 +16,14 @@ function Procedures(){
   }
 
   useEffect(() => {
-    setResult("resultTableCopy");
+    fetch('https://livestream.ibb.gov.tr/cam_turistik/b_kapalicarsi.stream/playlist.m3u8', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'true'
+        },
+    })
+    .then(data => setResult(data.json()))
   }, []);
 
   return (
