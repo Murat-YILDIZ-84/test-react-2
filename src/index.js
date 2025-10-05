@@ -15,26 +15,16 @@ function Procedures(){
     .catch((e)=> setResult("Sunucudan yanıt alınamadı\r\n" + e));
   }
 
-  useEffect(
-    setResult("resultTableCopy")
-  );
+  useEffect(() => {
+    setResult("resultTableCopy");
+  }, []);
 
   return (
     <>
       <button onClick={Test}>Test</button>
 
-      <ReactPlayer
-        crossorigin
-        src={result}
-        config={{
-          file: {
-            attributes: {
-              crossOrigin: "true",
-            }
-          }
-        }}
-        controls
-      />
+      {result}
+
     </>
   );
 }
