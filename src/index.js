@@ -29,6 +29,7 @@ function Procedures(){
         headers: {
             'Content-Type': 'application/vnd.apple.mpegurl',
             'Access-Control-Allow-Methods': 'OPTIONS, GET, POST, HEAD',
+            'Access-Control-Allow-Headers': 'Content-Type, User-Agent, If-Modified-Since, Cache-Control, Range',
             'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Allow-Origin': '*'
         },
