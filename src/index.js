@@ -34,7 +34,7 @@ function Procedures(){
             'Access-Control-Allow-Origin': '*'
         },
     })
-    .then(data => setResult(data))
+    .then(data => setResult(data.status))
   }, []);
 
   return (
