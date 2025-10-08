@@ -28,8 +28,7 @@ function Procedures(){
         mode: 'cors',
         headers: {
             'Content-Type': 'application/vnd.apple.mpegurl',
-            'Access-Control-Allow-Methods': 'OPTIONS, GET, POST, HEAD',
-            'Access-Control-Allow-Headers': 'x-requested-with',
+            'Access-Control-Allow-Methods': 'OPTIONS, GET, POST, HEAD, PATCH',
             'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Allow-Origin': '*'
         },
@@ -39,7 +38,7 @@ function Procedures(){
 
   return (
     <>
-      <button onClick={Test1}>Test1</button>
+      <button onClick={Test1}>Test-1</button>
       <button onClick={Test}>Test</button>
 
       {result}
