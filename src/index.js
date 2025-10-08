@@ -28,7 +28,7 @@ function Procedures(){
         mode: 'cors',
         headers: {
             'Content-Type': 'application/vnd.apple.mpegurl',
-            'Access-Control-Allow-Methods': 'OPTIONS, GET, POST, HEAD, PATCH',
+            'Access-Control-Allow-Methods': 'GET, POST, PATCH',
             'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Allow-Origin': '*'
         },
